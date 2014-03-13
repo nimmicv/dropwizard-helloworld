@@ -22,6 +22,8 @@ public class HelloWorldResource {
 
     @GET
     @Timed(name = "get-requests")
+    //Give json class name as parameter eg:Book book 
+    //Jersey notations
     public HelloMessage get(@QueryParam("name") Optional<String> name) {
         HelloMessage hello = new HelloMessage();
         hello.setMessage("Hello" + ( (name.isPresent()) ? " " + name.get() : ""));

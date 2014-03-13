@@ -3,6 +3,8 @@ dropwizard-helloworld
 
 $ mvn clean package
 
+$ Adding hooks
+
 $ bin/run.sh 
 
 # How to run the app  forever
